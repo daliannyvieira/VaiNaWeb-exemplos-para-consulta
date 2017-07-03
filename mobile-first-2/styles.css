@@ -1,0 +1,116 @@
+body {
+	padding: 0;
+	margin: 0;
+	font: normal 16px sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	position: relative;
+}
+
+img {
+	max-width: 100%;
+}
+
+.inicio {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: #fdfdfd url(comida-1.jpg);
+	background-size: cover;
+}
+
+.inicio::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(transparent, #fdfdfd);
+}
+
+.inicio-titulo,
+.inicio-descricao {
+	z-index: 1;
+}
+
+.inicio-descricao {
+	max-width: 80%;
+}
+
+@media (min-width: 920px) {
+	.inicio-descricao {
+		max-width: 50%;
+		text-align: center;
+	}
+}
+
+.galeria {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #fdfdfd;
+}
+
+@media (min-width: 920px) {
+	.galeria {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding: 2em 10em;
+	}
+}
+
+@media (min-width: 920px) {
+
+	.galeriga-imagem {
+		width: 400px;
+		max-height: 260px;
+	}
+
+	.galeria-imagem img {
+		width: 400px;
+		max-height: 260px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media (min-width: 920px) {
+	.galeria-imagem-descricao {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #444;
+		color: #fff;
+		opacity: 0;
+		transition: all 1s;
+	}
+
+	.galeria-imagem-descricao:hover {
+		opacity: 1;
+	}
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #444;
+}
+
+.footer-descricao {
+	color: #fff;
+}
