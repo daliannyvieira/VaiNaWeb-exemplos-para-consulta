@@ -15,7 +15,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	color: #222;
-	background: #fdfdfd url("inicio.jpg");
+	background: #fdfdfd url("assets/inicio.jpg");
 	background-size: cover;
 }
 
@@ -117,7 +117,7 @@ body {
 }
 
 .citacao {
-	background: #444 url(citacao.jpg) fixed;
+	background: #444 url(assets/citacao.jpg) fixed;
 	background-size: cover;
 }
 
