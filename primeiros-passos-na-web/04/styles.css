@@ -19,7 +19,7 @@ img {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background: #fdfdfd url(comida-1.jpg);
+	background: #fdfdfd url(assets/comida-1.jpg);
 	background-size: cover;
 }
 
