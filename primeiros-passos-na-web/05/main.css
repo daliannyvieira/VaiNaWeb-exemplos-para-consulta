@@ -1,0 +1,112 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	position: relative;
+}
+
+.secao {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.inicio {
+	background: url(cat01.jpg) center center;
+	background-size: cover;
+	overflow: hidden;
+	height: 100vh;
+}
+
+.inicio-titulo {
+	z-index: 1;
+}
+
+.gato01 {
+	position: absolute;
+	bottom: 0%;
+	left: 0;
+	opacity: 0.5;
+	width: 150%;
+}
+
+.gato02 {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	opacity: 0.5;
+	width: 100%;
+}
+
+.inicio-menu-lista {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	position: fixed;
+	top: 2%;
+	right: 5%;
+	z-index: 2;
+}
+
+.inicio-menu-lista-item {
+	padding: 0.75em;
+}
+
+.container {
+	width: 50%;
+}
+
+.sobre {
+	display: flex;
+	flex-direction: column;
+}
+
+.sobre div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 70%;
+}
+
+@media (max-width: 620px) {
+	.sobre div {
+		flex-direction: column;
+	}
+}
+
+.sobre-descricao {
+	width: 40%;
+	padding: 1em;
+}
+
+@media (max-width: 620px) {
+	.sobre-descricao {
+		width: 80%;
+	}
+}
+
+.conteudo {
+	background-color: #fbbc05;
+}
+
+.rodape {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #4285f4;
+}
+
+.rodape-descricao {
+	background: url(cat.jpg) center center;
+	background-size: cover;
+	height: 85vh;
+	padding: 1.25em;
+	color: #fff;
+}
