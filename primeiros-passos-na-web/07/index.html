@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Git</title>
+	<meta charset="utf-8">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+		}
+		* {
+			box-sizing: border-box;
+			position: relative;
+		}
+		.cabecalho {
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background: #333 url('cat.jpg') center center;
+			background-size: cover;
+		}
+		.cabecalho::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			opacity: 0.5;
+		}
+		.cabecalho-titulo {
+			color: red;
+			z-index: 1;
+		}
+		.cabecalho-descricao {
+			margin: 0;
+			color: #fff;
+			z-index: 1;
+		}
+		.menu {
+			position: absolute;
+			bottom: 0;
+			padding-bottom: 1em;
+		}
+		.menu-lista {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			display: flex;
+			align-items: center;
+		}
+		
+		.menu-lista-item {
+			color: #fff;
+			padding: 0.5em;
+			z-index: 1;
+		}
+	</style>
+</head>
+<body>
+	<header class="cabecalho">
+		<h1 class="cabecalho-titulo">Revisão Git</h1>
+		<p class="cabecalho-descricao">Revisão de terminal, Git e Github</p>
+		<nav class="menu">
+			<ul class="menu-lista">
+				<li class="menu-lista-item">inicio</li>
+				<li class="menu-lista-item">sobre</li>
+				<li class="menu-lista-item">contato</li>
+			</ul>
+		</nav>
+	</header>
+</body>
+</html>
